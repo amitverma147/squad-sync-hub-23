@@ -47,7 +47,7 @@ const TasksOverview: React.FC<TasksOverviewProps> = ({
               <span>Pending</span>
               <span className="text-muted-foreground">{pending} tasks ({pendingPercentage}%)</span>
             </div>
-            <Progress value={pendingPercentage} className="h-2 bg-amber-100" indicatorClassName="bg-amber-500" />
+            <Progress value={pendingPercentage} className="h-2 bg-amber-100 [&>div]:bg-amber-500" />
           </div>
           
           <div className="space-y-1">
@@ -55,7 +55,7 @@ const TasksOverview: React.FC<TasksOverviewProps> = ({
               <span>Ongoing</span>
               <span className="text-muted-foreground">{ongoing} tasks ({ongoingPercentage}%)</span>
             </div>
-            <Progress value={ongoingPercentage} className="h-2 bg-blue-100" indicatorClassName="bg-blue-500" />
+            <Progress value={ongoingPercentage} className="h-2 bg-blue-100 [&>div]:bg-blue-500" />
           </div>
           
           <div className="space-y-1">
@@ -63,7 +63,7 @@ const TasksOverview: React.FC<TasksOverviewProps> = ({
               <span>Scheduled</span>
               <span className="text-muted-foreground">{scheduled} tasks ({scheduledPercentage}%)</span>
             </div>
-            <Progress value={scheduledPercentage} className="h-2 bg-purple-100" indicatorClassName="bg-purple-500" />
+            <Progress value={scheduledPercentage} className="h-2 bg-purple-100 [&>div]:bg-purple-500" />
           </div>
           
           <div className="space-y-1">
@@ -71,7 +71,7 @@ const TasksOverview: React.FC<TasksOverviewProps> = ({
               <span>Completed</span>
               <span className="text-muted-foreground">{completed} tasks ({completedPercentage}%)</span>
             </div>
-            <Progress value={completedPercentage} className="h-2 bg-green-100" indicatorClassName="bg-green-500" />
+            <Progress value={completedPercentage} className="h-2 bg-green-100 [&>div]:bg-green-500" />
           </div>
         </div>
       </CardContent>
